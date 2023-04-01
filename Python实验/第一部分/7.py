@@ -5,9 +5,7 @@
 
 
 def main(n: int, m: int) -> [] or str:
-    if n > m:
-        return "Parameter Error"
-    if isinstance(n, int) or isinstance(m, int):
+    if not isinstance(n, int) or not isinstance(m, int):
         return "Parameter Error"
     Total = [True] * m
     count = 1
@@ -19,13 +17,15 @@ def main(n: int, m: int) -> [] or str:
                     count = 1
                 else:
                     count += 1
-    # 计算初始位置
+    # 计算初始位置，1代表基督徒，0代表非基督徒
     result = []
     for i in range(m):
         if Total[i]:
-            result.append(i + 1)
+            result.append(1)
+        else:
+            result.append(0)
     return result
 
 
 if __name__ == "__main__":
-    print(main(15, 30))
+    print(main(1, 2))

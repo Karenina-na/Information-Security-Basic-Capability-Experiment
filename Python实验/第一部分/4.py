@@ -28,5 +28,5 @@ def lcm(x, y) -> object:
 
 
 if __name__ == "__main__":
-    print(gcd(12, 18))
-    print(lcm(12, 18))
+    print(gcd(1, 2))
+    print(lcm(1, 2))
