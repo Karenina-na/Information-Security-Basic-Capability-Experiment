@@ -1,0 +1,32 @@
+A:Can I help you?
+B:Yes, please.I need a shorts.
+A:What color do you want?
+B:Purple.
+A:How about this one.
+B:NO it is small for me.
+A:How about this one.
+B:It looks nice. How much is it?
+A:eleven dollars.
+B:OK,I will take it.
+B:How much are this jacket?
+A:It is twenty-one dollars.
+B:It is expensive.
+A:OK, Here you are your shorts.
+B:Thanks.
+A:You are welcome!
+A:Can I help you?
+B:Yes, please.I need a shorts.
+A:What color do you want?
+B:Purple.
+A:How about this one.
+B:NO it is small for me.
+A:How about this one.
+B:It looks nice. How much is it?
+A:eleven dollars.
+B:OK,I will take it.
+B:How much are this jacket?
+A:It is twenty-one dollars.
+B:It is expensive.
+A:OK, Here you are your shorts.
+B:Thanks.
+A:You are welcome!
