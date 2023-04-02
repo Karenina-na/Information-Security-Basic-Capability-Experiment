@@ -82,7 +82,15 @@ def word_freq(path):
 
 # 题目十四：敏感词过滤
 def filter_words(user_input):
-    pass
+    with open("./testData/sensitive.txt", 'r') as f:
+        lines = f.readlines()
+        sensitive_words = []
+        for line in lines:
+            if line != "\n" and not line.startswith("第"):
+                sensitive_words.append(line.replace("\n", ""))
+    for word in sensitive_words:
+        user_input = user_input.replace(word, "*" * len(word))
+    return user_input
 
 
 if __name__ == '__main__':

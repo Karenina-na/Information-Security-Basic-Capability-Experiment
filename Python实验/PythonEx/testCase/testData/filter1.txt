@@ -1,0 +1,1 @@
+usingnamespacestd;intmain(){cout<<"Hello,World!"<<endl;return0;}

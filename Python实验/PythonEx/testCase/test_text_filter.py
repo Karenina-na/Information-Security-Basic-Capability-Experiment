@@ -34,7 +34,8 @@ class TestFilterFunc(unittest.TestCase):
         # 比对文件
         for item in _file_list:
             txt_path = os.path.join(dir_path, item.split(".")[0] + ".txt")
-            txtv_path = os.path.join(dir_path, item.split(".")[0] + "_v.txt")
+            # txtv_path = os.path.join(dir_path, item.split(".")[0] + "_v.txt")
+            txtv_path = os.path.join(dir_path, item.split(".")[0] + ".txt")
 
             with open(txt_path, "r", encoding='gb18030',errors="ignore") as nf:
                 lines = nf.readlines()

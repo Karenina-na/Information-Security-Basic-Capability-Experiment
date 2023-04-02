@@ -19,7 +19,6 @@ class TestNumFunc(unittest.TestCase):
         with open("./testData/pic_de.jpg", "rb") as f2:
             temp_11_2 = f2.read()
             f2.close()
-
         self.assertEqual(temp_11_1, temp_11_2)
 
 
