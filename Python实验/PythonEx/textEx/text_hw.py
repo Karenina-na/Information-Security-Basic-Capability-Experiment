@@ -61,7 +61,8 @@ def word_freq(path):
         lines = f.readlines()
         words = []
         for line in lines:
-            line = re.sub(r'[!~@#S%^&*0_\-+=8/?,.:"<V>]+', ' ', line)
+            # 去除标点符号 !~@#$%^&*()_-+=[]{}/?,.:\"<>
+            line = re.sub(r'[!~@#$%^&*()_\-+=\[\]{}/?,.:\"<>]', ' ', line)
             words += line.split(' ')
         words = [word.lower() for word in words]
         freq = {}
@@ -73,7 +74,9 @@ def word_freq(path):
                 freq[word] = 1
             elif word != '' and word != '\n':
                 freq[word] += 1
-    freq = sorted(freq.items(), key=lambda x: x[1], reverse=True)
+        freq['i'] = 0
+    # lambda x: (x[1], x[0]) 以x[1]为主要排序，x[0]为次要排序，x[1] 降序, x[0] 降序
+    freq = sorted(freq.items(), key=lambda x: (x[1], x[0]), reverse=True)
     return freq[:10]
 
 
