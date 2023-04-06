@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import sys
+
 sys.path.append("../")
 
 import unittest
@@ -17,7 +18,7 @@ class TestStructFunc(unittest.TestCase):
         self.assertEqual(data, b'2\x01abcdefghigklmnop\x00\x00\x01,\x00\x00\x00d\x14')
 
         new_dict = unpack_message(data)
-        self.assertDictEqual(new_dict,data_dict)
+        self.assertDictEqual(new_dict, data_dict)
 
 
 if __name__ == '__main__':
